@@ -13,7 +13,7 @@ static 	UserOp uo=new UserOp();
 		
 		us.setPass(pass);
 		uo.addUser(us);
-		uo.addUser(us);
+		//uo.addUser(us);
 		System.out.println("registration Sussesfully");
 	Test.Start();
 	}
@@ -23,7 +23,8 @@ static 	UserOp uo=new UserOp();
 		System.out.println("Enter the Password");
 		String pass=sc.next();
 		System.out.println("check");
-		uo.Login(userName,pass);
+		uo.Authentication(userName,pass);
+		
 }
 //	public static void getUserdata() {
 //		uo.display();

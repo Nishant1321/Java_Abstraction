@@ -4,8 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class JackPotApp {
-	
+//	static UserOp su= new UserOp();
 	static JackpotInfo obj = new JackpotInfo();
+//	static User jk=new User();
 	static Scanner sc = new Scanner(System.in);
 	public static  void setData() {
 		
@@ -56,6 +57,7 @@ public class JackPotApp {
 		
 		
 		System.out.println("It is Your Amount is :"+obj.getAmount());
+//System.out.println("the Usre Name is :"+su.display(us));
 	}
 
 

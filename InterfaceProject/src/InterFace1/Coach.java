@@ -5,7 +5,7 @@ import InterFace2.Diet1;
 
 import java.util.*;
 public   interface Coach extends Diet{
-	String getDailyWorkout();
+	 String getDailyWorkout();
 	String getPractice();
 public static void main (String args[]) {
 	Scanner sc = new Scanner(System.in);

@@ -1,9 +1,9 @@
 package JackPotGame;
-import java.util.*;
+
 import java.util.ArrayList;
 
 public class UserOp {
-	private ArrayList<User>list;
+	private static ArrayList<User>list;
 	public UserOp(){
 list = new ArrayList<User>();
 
@@ -15,14 +15,13 @@ list = new ArrayList<User>();
 		list.remove(op);
 		
 	}
-	public void display() {
+	public  static void display() {
 		for(User us:list) {
 			System.out.println("userName :"+us.getUserName()+" Password"+us.getPass());
 		}
 	}
-	public void Login(String userName,String pass) {
-		Scanner sc = new Scanner(System.in);
-		boolean found;
+	public void Authentication(String userName,String pass) {
+		boolean found ;
 		for(User us:list) {
 		String existingPassword=us.getPass();
 		String existingName=us.getUserName();
@@ -33,14 +32,15 @@ list = new ArrayList<User>();
 
 				
 				JackPotResult.getJackPotInfo();
-			
-		
-		}
-		
+					
+			}
 		break;
 		
+		
 		}else {
+			
 			System.out.println("Enter valid user name or Password");
+//break;
 		}
 		
 		
