@@ -1,6 +1,7 @@
 package com.demo.Adhar.AdharCard_hibernate;
 
 import org.hibernate.Session;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
