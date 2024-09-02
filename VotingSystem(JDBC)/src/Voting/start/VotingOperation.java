@@ -69,7 +69,7 @@ public void StartVoting() {
 	pstrash.setInt(1, Voterid);
 	pstrash.executeUpdate();
 	VotingOperation.setVotes();
-//	System.out.println("Successfully");
+	System.out.println("Successfully");
 	}
 		
 	found=true;

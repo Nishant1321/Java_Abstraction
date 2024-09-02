@@ -17,6 +17,7 @@ public static void  setCandidate() {
 	while( ch==1) {
 		Candidate cd= new Candidate();
 	
+		
 		System.out.println("Enter the name");
 		cd.setName(sc.next());
 		

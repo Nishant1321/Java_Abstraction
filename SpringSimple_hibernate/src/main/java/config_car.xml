@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+		<bean id="fortuner" class="com.demos.vehicle.Fortuner"/>
+		<bean id="swift" class="com.demos.vehicle.Swift"/>
+		
+		<bean id="tata" class="com.demos.vehicle.Tata">
+		<property name="cardetails" ref="swift"/>
+		</bean>
+		
+		<bean id="toyato" class="com.demos.vehicle.Toyato">
+		<property name="cardetails" ref="fortuner"/>
+		</bean>
+		
+		</beans>

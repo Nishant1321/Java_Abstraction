@@ -15,7 +15,7 @@ public static Connection getConnect() {
 	}
 	try {
 		
-		co=DriverManager.getConnection("jdbc:mysql://localhost:3306/votingsystem","root","Nishant@1308");
+		co=DriverManager.getConnection("jdbc:mysql://localhost:3306/VotingSystem","root","Nishant@1308");
 	
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block

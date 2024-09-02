@@ -1,10 +1,11 @@
 package Com.votingSystem;
 import java.util.*;
 
+
 import Com.voting.candidate.Operation;
 import Voting.start.VotingOperation;
 import Voting.system.voters.OperationVT;
-import Voting.system.voters.ResetData;
+//import Voting.system.voters.ResetData;
 public class CandidateTest {
 	
 	static {
@@ -13,7 +14,7 @@ public class CandidateTest {
 static	Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		ResetData rd=new ResetData();
+		//ResetData rd=new ResetData();
 		VotingOperation vo=new VotingOperation();
 		Operation op= new Operation();
 		OperationVT ot= new OperationVT();
@@ -30,7 +31,7 @@ case 3 :
 	vo.StartVoting();
 	break;
 case 4:
-	rd.Reset();
+	//rd.Reset();
 	break;
 }
 	}

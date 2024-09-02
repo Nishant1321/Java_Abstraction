@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+		<bean
+		id="good" class="com.demo.Spring.SpringSimple_hibernate.GoodFortune"/>
+		<bean id="bad" class="com.demo.Spring.SpringSimple_hibernate.BadFortune"/>
+		<bean id="cricket" class=" com.demo.Spring.SpringSimple_hibernate.Cricket">
+		
+		<property name="fortune" ref="good"/>
+		</bean>
+		
+			<bean id="football" class=" com.demo.Spring.SpringSimple_hibernate.Football">
+		
+		<property name="fortune" ref="bad"/>
+		</bean>
+		
+		
+		</beans>
